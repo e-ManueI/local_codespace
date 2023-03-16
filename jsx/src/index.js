@@ -11,15 +11,11 @@ const root = ReactDOM.createRoot(el);
 
 // Create a component
 function App() {
-    const name = 'Emmanuel';
-    const age = 23;
+    const inputType = "number";
+    const minValue = 5;
 
-    return (
-        <h1>
-            Hi, my name is {name} and I am {age} years old.
-        </h1>
-    );
+    return <input style={{border: '3px solid red'}} type={inputType} min={minValue} max='100' step='1' defaultValue='50' />
+    // return <input type='number' min='0' max='100' step='1' defaultValue='50' />
 }
-
 // Show the component on the screen
 root.render(<App />);

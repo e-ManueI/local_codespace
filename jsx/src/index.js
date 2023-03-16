@@ -11,7 +11,17 @@ const root = ReactDOM.createRoot(el);
 
 // Create a component
 function App() {
-    return <textarea autoFocus={true} />
+    return (
+        <div>
+            <textarea autoFocus={true} />
+            <hr></hr>
+            <input maxLength={5} spellCheck={false} />
+            <hr></hr>
+            <input className="divider" maxLength={5} spellCheck={false} />
+            <hr></hr>
+            <input style={{textDecoration: 'none', padding: '5px'}} maxLength={5} spellCheck={false} />
+        </div>
+    )
 }
 // Show the component on the screen
 root.render(<App />);

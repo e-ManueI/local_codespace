@@ -28,12 +28,9 @@ function AnimalShow({ type }) {
         setClicks(clicks + 1);
     };
     return (
-    <div onClick={handlclick}>
-            <img alt='animal' src={svgMap[type]} />
-            <img
-                alt='heart'
-                src={heart}
-                style={{ width: 10 + 10*clicks + 'px' }} />
+    <div className='animal-show' onClick={handlclick}>
+            <img className='animal' alt='animal' src={svgMap[type]} />
+            <img className='heart' alt='heart' src={heart} style={{ width: 10 + 10*clicks + 'px' }} />
         </div>
     );
 }
